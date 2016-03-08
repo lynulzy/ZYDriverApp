@@ -1,0 +1,28 @@
+BASE_SERVICE = "http://114.215.176.234:8080";
+登录接口：LOGIN_URL = "/lines/clientLoginByGet.do?loginname=%s&loginpwd=%s&device=%s"; // device= "udid"
+上传接口：URL = "http://114.215.176.234:8080/lines/uploadfileFromAndroid.do";
+上传文件的内容格式：
+//第一行14列，特殊解析（以空格为分隔符）
+1	deviceid设备udid 
+2	cardnum车牌号 
+3	distance距离 
+4	startime开始时间 
+5	endtime结束时间 
+6	totaltime总时间 
+7	routeid规定路线id *
+8	userid用户id 
+9	loginnamme账号 
+10	loginpwd注册码 
+11	speed平均
+12	topspeed最高速度 
+13	spenttime停留时间
+14	uuid该文件入库主键()  *
+其他行就是基于gps定位的数据，（需要过虑掉不是GPS定位的数据）
+1   Latitude
+2	Longitude
+3	speed
+4	ALTITUDE
+5	time 当前时间
+5	accuracy
+7	bearing
+8	state (1,开始记录点 （重新继续），0：记录运行的轨迹点)

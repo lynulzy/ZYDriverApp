@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48338A4D1BDB405700F3FA73 /* RouteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48338A4C1BDB405700F3FA73 /* RouteDetailViewController.m */; };
+		486CDAD81BD9E4940068F56F /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAD41BD9E4940068F56F /* BaiduMapAPI_Base.framework */; };
+		486CDAD91BD9E4940068F56F /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAD51BD9E4940068F56F /* BaiduMapAPI_Location.framework */; };
+		486CDADA1BD9E4940068F56F /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAD61BD9E4940068F56F /* BaiduMapAPI_Map.framework */; };
+		486CDADB1BD9E4940068F56F /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAD71BD9E4940068F56F /* BaiduMapAPI_Utils.framework */; };
+		486CDADD1BD9E4F70068F56F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDADC1BD9E4F70068F56F /* CoreLocation.framework */; };
+		486CDADF1BD9E5020068F56F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDADE1BD9E5020068F56F /* QuartzCore.framework */; };
+		486CDAE11BD9E50C0068F56F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAE01BD9E50C0068F56F /* OpenGLES.framework */; };
+		486CDAE31BD9E51C0068F56F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAE21BD9E51C0068F56F /* SystemConfiguration.framework */; };
+		486CDAE51BD9E5250068F56F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAE41BD9E5250068F56F /* CoreGraphics.framework */; };
+		486CDAE71BD9E52D0068F56F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAE61BD9E52D0068F56F /* Security.framework */; };
+		486CDAE91BD9E54A0068F56F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAE81BD9E54A0068F56F /* libsqlite3.0.tbd */; };
+		486CDAEB1BD9E55A0068F56F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAEA1BD9E55A0068F56F /* CoreTelephony.framework */; };
+		486CDAED1BD9E5670068F56F /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 486CDAEC1BD9E5670068F56F /* libstdc++.6.0.9.tbd */; };
+		486CDAEF1BD9E5F60068F56F /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 486CDAEE1BD9E5F60068F56F /* mapapi.bundle */; };
+		486CDAF21BDA0FF60068F56F /* ZYFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CDAF11BDA0FF60068F56F /* ZYFileManager.m */; };
+		486CDAF51BDA31300068F56F /* ZYDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CDAF41BDA31300068F56F /* ZYDataBaseManager.m */; };
+		486CDAF91BDA9C580068F56F /* HistoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CDAF81BDA9C580068F56F /* HistoryListViewController.m */; };
+		486CDAFC1BDA9CA40068F56F /* RecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CDAFB1BDA9CA40068F56F /* RecordModel.m */; };
+		486CDAFF1BDAA1BF0068F56F /* RecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CDAFE1BDAA1BF0068F56F /* RecordCell.m */; };
+		488D9A1B1BDDB5E700C62D0E /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 488D9A181BDDB5E700C62D0E /* Base64.m */; };
+		488D9A1C1BDDB5E700C62D0E /* DESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 488D9A1A1BDDB5E700C62D0E /* DESUtils.m */; };
+		48CA90AA1BD8AD210031EE49 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CA90A91BD8AD210031EE49 /* PersonViewController.m */; };
+		48D5E1D61BD8BA4000F7638C /* ZYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D5E1D31BD8BA4000F7638C /* ZYBaseViewController.m */; };
+		48D5E1D71BD8BA4000F7638C /* ZYBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D5E1D51BD8BA4000F7638C /* ZYBaseViewModel.m */; };
+		48D5E1DA1BD8BA8D00F7638C /* ZSXJHTTPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D5E1D91BD8BA8D00F7638C /* ZSXJHTTPSession.m */; };
+		48D5E1DF1BD8BABC00F7638C /* HTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D5E1DC1BD8BABC00F7638C /* HTTPHelper.m */; };
+		48D5E1E01BD8BABC00F7638C /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D5E1DE1BD8BABC00F7638C /* MD5.m */; };
+		48D5E1E51BD8BDF300F7638C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D5E1E41BD8BDF300F7638C /* LoginViewController.m */; };
+		48D5E1E81BD8CB8E00F7638C /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D5E1E71BD8CB8E00F7638C /* LoginViewModel.m */; };
+		48D5E1EB1BD8DDE400F7638C /* ZSXJUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D5E1EA1BD8DDE400F7638C /* ZSXJUserDefaults.m */; };
+		48DF69B31BD8A6010098FD92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DF69B21BD8A6010098FD92 /* main.m */; };
+		48DF69B61BD8A6010098FD92 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48DF69B51BD8A6010098FD92 /* AppDelegate.mm */; };
+		48DF69B91BD8A6010098FD92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DF69B81BD8A6010098FD92 /* ViewController.m */; };
+		48DF69BC1BD8A6010098FD92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48DF69BA1BD8A6010098FD92 /* Main.storyboard */; };
+		48DF69BE1BD8A6010098FD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48DF69BD1BD8A6010098FD92 /* Assets.xcassets */; };
+		48DF69C11BD8A6010098FD92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48DF69BF1BD8A6010098FD92 /* LaunchScreen.storyboard */; };
+		48DF69CC1BD8A6010098FD92 /* DriverAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DF69CB1BD8A6010098FD92 /* DriverAppTests.m */; };
+		FAAEE4A2D99818C5ED189271 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A711291ED884C9596C8A62 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48DF69C81BD8A6010098FD92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48DF69A61BD8A6010098FD92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48DF69AD1BD8A6010098FD92;
+			remoteInfo = DriverApp;
+		};
+		48DF69D31BD8A6010098FD92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48DF69A61BD8A6010098FD92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48DF69AD1BD8A6010098FD92;
+			remoteInfo = DriverApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15FC685EB4C78EDAFB21E1E3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		190302CAF8422BC17A813A41 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		48338A4B1BDB405700F3FA73 /* RouteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteDetailViewController.h; sourceTree = "<group>"; };
+		48338A4C1BDB405700F3FA73 /* RouteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteDetailViewController.m; sourceTree = "<group>"; };
+		486CDAD41BD9E4940068F56F /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		486CDAD51BD9E4940068F56F /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		486CDAD61BD9E4940068F56F /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		486CDAD71BD9E4940068F56F /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		486CDADC1BD9E4F70068F56F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		486CDADE1BD9E5020068F56F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		486CDAE01BD9E50C0068F56F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		486CDAE21BD9E51C0068F56F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		486CDAE41BD9E5250068F56F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		486CDAE61BD9E52D0068F56F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		486CDAE81BD9E54A0068F56F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		486CDAEA1BD9E55A0068F56F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		486CDAEC1BD9E5670068F56F /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		486CDAEE1BD9E5F60068F56F /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = DriverApp/Baidu/iosSDK/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
+		486CDAF01BDA0FF60068F56F /* ZYFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYFileManager.h; sourceTree = "<group>"; };
+		486CDAF11BDA0FF60068F56F /* ZYFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYFileManager.m; sourceTree = "<group>"; };
+		486CDAF31BDA31300068F56F /* ZYDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDataBaseManager.h; sourceTree = "<group>"; };
+		486CDAF41BDA31300068F56F /* ZYDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDataBaseManager.m; sourceTree = "<group>"; };
+		486CDAF71BDA9C580068F56F /* HistoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryListViewController.h; sourceTree = "<group>"; };
+		486CDAF81BDA9C580068F56F /* HistoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryListViewController.m; sourceTree = "<group>"; };
+		486CDAFA1BDA9CA40068F56F /* RecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordModel.h; sourceTree = "<group>"; };
+		486CDAFB1BDA9CA40068F56F /* RecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordModel.m; sourceTree = "<group>"; };
+		486CDAFD1BDAA1BF0068F56F /* RecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordCell.h; sourceTree = "<group>"; };
+		486CDAFE1BDAA1BF0068F56F /* RecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordCell.m; sourceTree = "<group>"; };
+		488D9A171BDDB5E700C62D0E /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = ../../../DesDemo/DesDemo/Base64.h; sourceTree = "<group>"; };
+		488D9A181BDDB5E700C62D0E /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = ../../../DesDemo/DesDemo/Base64.m; sourceTree = "<group>"; };
+		488D9A191BDDB5E700C62D0E /* DESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DESUtils.h; path = ../../../DesDemo/DesDemo/DESUtils.h; sourceTree = "<group>"; };
+		488D9A1A1BDDB5E700C62D0E /* DESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DESUtils.m; path = ../../../DesDemo/DesDemo/DESUtils.m; sourceTree = "<group>"; };
+		48CA90A81BD8AD210031EE49 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		48CA90A91BD8AD210031EE49 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		48D5E1D21BD8BA4000F7638C /* ZYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseViewController.h; sourceTree = "<group>"; };
+		48D5E1D31BD8BA4000F7638C /* ZYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseViewController.m; sourceTree = "<group>"; };
+		48D5E1D41BD8BA4000F7638C /* ZYBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseViewModel.h; sourceTree = "<group>"; };
+		48D5E1D51BD8BA4000F7638C /* ZYBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseViewModel.m; sourceTree = "<group>"; };
+		48D5E1D81BD8BA8D00F7638C /* ZSXJHTTPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSXJHTTPSession.h; sourceTree = "<group>"; };
+		48D5E1D91BD8BA8D00F7638C /* ZSXJHTTPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSXJHTTPSession.m; sourceTree = "<group>"; };
+		48D5E1DB1BD8BABC00F7638C /* HTTPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPHelper.h; sourceTree = "<group>"; };
+		48D5E1DC1BD8BABC00F7638C /* HTTPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPHelper.m; sourceTree = "<group>"; };
+		48D5E1DD1BD8BABC00F7638C /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		48D5E1DE1BD8BABC00F7638C /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
+		48D5E1E11BD8BAE100F7638C /* DriverApp.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriverApp.pch; sourceTree = "<group>"; };
+		48D5E1E31BD8BDF300F7638C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		48D5E1E41BD8BDF300F7638C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		48D5E1E61BD8CB8E00F7638C /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		48D5E1E71BD8CB8E00F7638C /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		48D5E1E91BD8DDE400F7638C /* ZSXJUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSXJUserDefaults.h; sourceTree = "<group>"; };
+		48D5E1EA1BD8DDE400F7638C /* ZSXJUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSXJUserDefaults.m; sourceTree = "<group>"; };
+		48DF69AE1BD8A6010098FD92 /* DriverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48DF69B21BD8A6010098FD92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48DF69B41BD8A6010098FD92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		48DF69B51BD8A6010098FD92 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		48DF69B71BD8A6010098FD92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		48DF69B81BD8A6010098FD92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		48DF69BB1BD8A6010098FD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48DF69BD1BD8A6010098FD92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48DF69C01BD8A6010098FD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48DF69C21BD8A6010098FD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48DF69C71BD8A6010098FD92 /* DriverAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriverAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48DF69CB1BD8A6010098FD92 /* DriverAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DriverAppTests.m; sourceTree = "<group>"; };
+		48DF69CD1BD8A6010098FD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48DF69D21BD8A6010098FD92 /* DriverAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriverAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48DF69E41BD8A7C80098FD92 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		68A711291ED884C9596C8A62 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48DF69AB1BD8A6010098FD92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				486CDAED1BD9E5670068F56F /* libstdc++.6.0.9.tbd in Frameworks */,
+				486CDAEB1BD9E55A0068F56F /* CoreTelephony.framework in Frameworks */,
+				486CDAE91BD9E54A0068F56F /* libsqlite3.0.tbd in Frameworks */,
+				486CDAE71BD9E52D0068F56F /* Security.framework in Frameworks */,
+				486CDAE51BD9E5250068F56F /* CoreGraphics.framework in Frameworks */,
+				486CDAE31BD9E51C0068F56F /* SystemConfiguration.framework in Frameworks */,
+				486CDAE11BD9E50C0068F56F /* OpenGLES.framework in Frameworks */,
+				486CDADF1BD9E5020068F56F /* QuartzCore.framework in Frameworks */,
+				486CDADD1BD9E4F70068F56F /* CoreLocation.framework in Frameworks */,
+				FAAEE4A2D99818C5ED189271 /* libPods.a in Frameworks */,
+				486CDAD91BD9E4940068F56F /* BaiduMapAPI_Location.framework in Frameworks */,
+				486CDAD81BD9E4940068F56F /* BaiduMapAPI_Base.framework in Frameworks */,
+				486CDADB1BD9E4940068F56F /* BaiduMapAPI_Utils.framework in Frameworks */,
+				486CDADA1BD9E4940068F56F /* BaiduMapAPI_Map.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48DF69C41BD8A6010098FD92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48DF69CF1BD8A6010098FD92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F319834C0AFE5B64C180AAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				190302CAF8422BC17A813A41 /* Pods.debug.xcconfig */,
+				15FC685EB4C78EDAFB21E1E3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		486CDAD21BD9E4940068F56F /* Baidu */ = {
+			isa = PBXGroup;
+			children = (
+				486CDAD31BD9E4940068F56F /* iosSDK */,
+			);
+			path = Baidu;
+			sourceTree = "<group>";
+		};
+		486CDAD31BD9E4940068F56F /* iosSDK */ = {
+			isa = PBXGroup;
+			children = (
+				486CDAD41BD9E4940068F56F /* BaiduMapAPI_Base.framework */,
+				486CDAD51BD9E4940068F56F /* BaiduMapAPI_Location.framework */,
+				486CDAD61BD9E4940068F56F /* BaiduMapAPI_Map.framework */,
+				486CDAD71BD9E4940068F56F /* BaiduMapAPI_Utils.framework */,
+			);
+			path = iosSDK;
+			sourceTree = "<group>";
+		};
+		486CDAF61BDA9C580068F56F /* History */ = {
+			isa = PBXGroup;
+			children = (
+				486CDAF71BDA9C580068F56F /* HistoryListViewController.h */,
+				486CDAF81BDA9C580068F56F /* HistoryListViewController.m */,
+				486CDAFA1BDA9CA40068F56F /* RecordModel.h */,
+				486CDAFB1BDA9CA40068F56F /* RecordModel.m */,
+				486CDAFD1BDAA1BF0068F56F /* RecordCell.h */,
+				486CDAFE1BDAA1BF0068F56F /* RecordCell.m */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		48D5E1E21BD8BDDC00F7638C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				48D5E1E31BD8BDF300F7638C /* LoginViewController.h */,
+				48D5E1E41BD8BDF300F7638C /* LoginViewController.m */,
+				48D5E1E61BD8CB8E00F7638C /* LoginViewModel.h */,
+				48D5E1E71BD8CB8E00F7638C /* LoginViewModel.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		48DF69A51BD8A6010098FD92 = {
+			isa = PBXGroup;
+			children = (
+				486CDAEE1BD9E5F60068F56F /* mapapi.bundle */,
+				48DF69B01BD8A6010098FD92 /* DriverApp */,
+				48DF69CA1BD8A6010098FD92 /* DriverAppTests */,
+				48DF69AF1BD8A6010098FD92 /* Products */,
+				2F319834C0AFE5B64C180AAD /* Pods */,
+				4E67BF82F7C8B2F6D849D7C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48DF69AF1BD8A6010098FD92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48DF69AE1BD8A6010098FD92 /* DriverApp.app */,
+				48DF69C71BD8A6010098FD92 /* DriverAppTests.xctest */,
+				48DF69D21BD8A6010098FD92 /* DriverAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48DF69B01BD8A6010098FD92 /* DriverApp */ = {
+			isa = PBXGroup;
+			children = (
+				486CDAD21BD9E4940068F56F /* Baidu */,
+				48DF69E51BD8A8FF0098FD92 /* BaseCode */,
+				48DF69E61BD8A8FF0098FD92 /* FuncModule */,
+				48DF69B41BD8A6010098FD92 /* AppDelegate.h */,
+				48DF69B51BD8A6010098FD92 /* AppDelegate.mm */,
+				48DF69B71BD8A6010098FD92 /* ViewController.h */,
+				48DF69B81BD8A6010098FD92 /* ViewController.m */,
+				48DF69BA1BD8A6010098FD92 /* Main.storyboard */,
+				48DF69BD1BD8A6010098FD92 /* Assets.xcassets */,
+				48DF69BF1BD8A6010098FD92 /* LaunchScreen.storyboard */,
+				48DF69C21BD8A6010098FD92 /* Info.plist */,
+				48DF69B11BD8A6010098FD92 /* Supporting Files */,
+				48DF69E41BD8A7C80098FD92 /* Define.h */,
+			);
+			path = DriverApp;
+			sourceTree = "<group>";
+		};
+		48DF69B11BD8A6010098FD92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48DF69B21BD8A6010098FD92 /* main.m */,
+				48D5E1E11BD8BAE100F7638C /* DriverApp.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48DF69CA1BD8A6010098FD92 /* DriverAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				48DF69CB1BD8A6010098FD92 /* DriverAppTests.m */,
+				48DF69CD1BD8A6010098FD92 /* Info.plist */,
+			);
+			path = DriverAppTests;
+			sourceTree = "<group>";
+		};
+		48DF69E51BD8A8FF0098FD92 /* BaseCode */ = {
+			isa = PBXGroup;
+			children = (
+				488D9A171BDDB5E700C62D0E /* Base64.h */,
+				488D9A181BDDB5E700C62D0E /* Base64.m */,
+				488D9A191BDDB5E700C62D0E /* DESUtils.h */,
+				488D9A1A1BDDB5E700C62D0E /* DESUtils.m */,
+				48D5E1E91BD8DDE400F7638C /* ZSXJUserDefaults.h */,
+				48D5E1EA1BD8DDE400F7638C /* ZSXJUserDefaults.m */,
+				48D5E1DB1BD8BABC00F7638C /* HTTPHelper.h */,
+				48D5E1DC1BD8BABC00F7638C /* HTTPHelper.m */,
+				48D5E1DD1BD8BABC00F7638C /* MD5.h */,
+				48D5E1DE1BD8BABC00F7638C /* MD5.m */,
+				48D5E1D81BD8BA8D00F7638C /* ZSXJHTTPSession.h */,
+				48D5E1D91BD8BA8D00F7638C /* ZSXJHTTPSession.m */,
+				48D5E1D21BD8BA4000F7638C /* ZYBaseViewController.h */,
+				48D5E1D31BD8BA4000F7638C /* ZYBaseViewController.m */,
+				48D5E1D41BD8BA4000F7638C /* ZYBaseViewModel.h */,
+				48D5E1D51BD8BA4000F7638C /* ZYBaseViewModel.m */,
+				486CDAF01BDA0FF60068F56F /* ZYFileManager.h */,
+				486CDAF11BDA0FF60068F56F /* ZYFileManager.m */,
+				486CDAF31BDA31300068F56F /* ZYDataBaseManager.h */,
+				486CDAF41BDA31300068F56F /* ZYDataBaseManager.m */,
+			);
+			path = BaseCode;
+			sourceTree = "<group>";
+		};
+		48DF69E61BD8A8FF0098FD92 /* FuncModule */ = {
+			isa = PBXGroup;
+			children = (
+				486CDAF61BDA9C580068F56F /* History */,
+				48D5E1E21BD8BDDC00F7638C /* Login */,
+				48CA90A81BD8AD210031EE49 /* PersonViewController.h */,
+				48CA90A91BD8AD210031EE49 /* PersonViewController.m */,
+				48338A4B1BDB405700F3FA73 /* RouteDetailViewController.h */,
+				48338A4C1BDB405700F3FA73 /* RouteDetailViewController.m */,
+			);
+			path = FuncModule;
+			sourceTree = "<group>";
+		};
+		4E67BF82F7C8B2F6D849D7C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				486CDAEC1BD9E5670068F56F /* libstdc++.6.0.9.tbd */,
+				486CDAEA1BD9E55A0068F56F /* CoreTelephony.framework */,
+				486CDAE81BD9E54A0068F56F /* libsqlite3.0.tbd */,
+				486CDAE61BD9E52D0068F56F /* Security.framework */,
+				486CDAE41BD9E5250068F56F /* CoreGraphics.framework */,
+				486CDAE21BD9E51C0068F56F /* SystemConfiguration.framework */,
+				486CDAE01BD9E50C0068F56F /* OpenGLES.framework */,
+				486CDADE1BD9E5020068F56F /* QuartzCore.framework */,
+				486CDADC1BD9E4F70068F56F /* CoreLocation.framework */,
+				68A711291ED884C9596C8A62 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48DF69AD1BD8A6010098FD92 /* DriverApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48DF69DB1BD8A6010098FD92 /* Build configuration list for PBXNativeTarget "DriverApp" */;
+			buildPhases = (
+				5359B41EABC0DD1EF437EB89 /* Check Pods Manifest.lock */,
+				48DF69AA1BD8A6010098FD92 /* Sources */,
+				48DF69AB1BD8A6010098FD92 /* Frameworks */,
+				48DF69AC1BD8A6010098FD92 /* Resources */,
+				720F4488F40A753630E296FC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DriverApp;
+			productName = DriverApp;
+			productReference = 48DF69AE1BD8A6010098FD92 /* DriverApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48DF69C61BD8A6010098FD92 /* DriverAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48DF69DE1BD8A6010098FD92 /* Build configuration list for PBXNativeTarget "DriverAppTests" */;
+			buildPhases = (
+				48DF69C31BD8A6010098FD92 /* Sources */,
+				48DF69C41BD8A6010098FD92 /* Frameworks */,
+				48DF69C51BD8A6010098FD92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48DF69C91BD8A6010098FD92 /* PBXTargetDependency */,
+			);
+			name = DriverAppTests;
+			productName = DriverAppTests;
+			productReference = 48DF69C71BD8A6010098FD92 /* DriverAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48DF69D11BD8A6010098FD92 /* DriverAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48DF69E11BD8A6010098FD92 /* Build configuration list for PBXNativeTarget "DriverAppUITests" */;
+			buildPhases = (
+				48DF69CE1BD8A6010098FD92 /* Sources */,
+				48DF69CF1BD8A6010098FD92 /* Frameworks */,
+				48DF69D01BD8A6010098FD92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48DF69D41BD8A6010098FD92 /* PBXTargetDependency */,
+			);
+			name = DriverAppUITests;
+			productName = DriverAppUITests;
+			productReference = 48DF69D21BD8A6010098FD92 /* DriverAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48DF69A61BD8A6010098FD92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = lynulzy;
+				TargetAttributes = {
+					48DF69AD1BD8A6010098FD92 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = XGAEE7Y7QD;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					48DF69C61BD8A6010098FD92 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 48DF69AD1BD8A6010098FD92;
+					};
+					48DF69D11BD8A6010098FD92 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 48DF69AD1BD8A6010098FD92;
+					};
+				};
+			};
+			buildConfigurationList = 48DF69A91BD8A6010098FD92 /* Build configuration list for PBXProject "DriverApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48DF69A51BD8A6010098FD92;
+			productRefGroup = 48DF69AF1BD8A6010098FD92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48DF69AD1BD8A6010098FD92 /* DriverApp */,
+				48DF69C61BD8A6010098FD92 /* DriverAppTests */,
+				48DF69D11BD8A6010098FD92 /* DriverAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48DF69AC1BD8A6010098FD92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48DF69C11BD8A6010098FD92 /* LaunchScreen.storyboard in Resources */,
+				486CDAEF1BD9E5F60068F56F /* mapapi.bundle in Resources */,
+				48DF69BE1BD8A6010098FD92 /* Assets.xcassets in Resources */,
+				48DF69BC1BD8A6010098FD92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48DF69C51BD8A6010098FD92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48DF69D01BD8A6010098FD92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5359B41EABC0DD1EF437EB89 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		720F4488F40A753630E296FC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48DF69AA1BD8A6010098FD92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D5E1E81BD8CB8E00F7638C /* LoginViewModel.m in Sources */,
+				48D5E1D61BD8BA4000F7638C /* ZYBaseViewController.m in Sources */,
+				488D9A1C1BDDB5E700C62D0E /* DESUtils.m in Sources */,
+				486CDAF51BDA31300068F56F /* ZYDataBaseManager.m in Sources */,
+				48CA90AA1BD8AD210031EE49 /* PersonViewController.m in Sources */,
+				48D5E1E01BD8BABC00F7638C /* MD5.m in Sources */,
+				48D5E1EB1BD8DDE400F7638C /* ZSXJUserDefaults.m in Sources */,
+				48DF69B91BD8A6010098FD92 /* ViewController.m in Sources */,
+				48D5E1DF1BD8BABC00F7638C /* HTTPHelper.m in Sources */,
+				486CDAFC1BDA9CA40068F56F /* RecordModel.m in Sources */,
+				488D9A1B1BDDB5E700C62D0E /* Base64.m in Sources */,
+				48DF69B61BD8A6010098FD92 /* AppDelegate.mm in Sources */,
+				48DF69B31BD8A6010098FD92 /* main.m in Sources */,
+				486CDAF21BDA0FF60068F56F /* ZYFileManager.m in Sources */,
+				48D5E1D71BD8BA4000F7638C /* ZYBaseViewModel.m in Sources */,
+				48D5E1E51BD8BDF300F7638C /* LoginViewController.m in Sources */,
+				48D5E1DA1BD8BA8D00F7638C /* ZSXJHTTPSession.m in Sources */,
+				486CDAFF1BDAA1BF0068F56F /* RecordCell.m in Sources */,
+				486CDAF91BDA9C580068F56F /* HistoryListViewController.m in Sources */,
+				48338A4D1BDB405700F3FA73 /* RouteDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48DF69C31BD8A6010098FD92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48DF69CC1BD8A6010098FD92 /* DriverAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48DF69CE1BD8A6010098FD92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48DF69C91BD8A6010098FD92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48DF69AD1BD8A6010098FD92 /* DriverApp */;
+			targetProxy = 48DF69C81BD8A6010098FD92 /* PBXContainerItemProxy */;
+		};
+		48DF69D41BD8A6010098FD92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48DF69AD1BD8A6010098FD92 /* DriverApp */;
+			targetProxy = 48DF69D31BD8A6010098FD92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48DF69BA1BD8A6010098FD92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48DF69BB1BD8A6010098FD92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48DF69BF1BD8A6010098FD92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48DF69C01BD8A6010098FD92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48DF69D91BD8A6010098FD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		48DF69DA1BD8A6010098FD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48DF69DC1BD8A6010098FD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 190302CAF8422BC17A813A41 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhang zhenfeng (8J789XETE3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhang zhenfeng (8J789XETE3)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DriverApp/iosSDK",
+					"$(PROJECT_DIR)/DriverApp/Baidu/iosSDK",
+				);
+				GCC_PREFIX_HEADER = DriverApp/DriverApp.pch;
+				INFOPLIST_FILE = DriverApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzy.DriverApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		48DF69DD1BD8A6010098FD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15FC685EB4C78EDAFB21E1E3 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: EFLAG Communication Technology Co.Ltd (XGAEE7Y7QD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: EFLAG Communication Technology Co.Ltd (XGAEE7Y7QD)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DriverApp/iosSDK",
+					"$(PROJECT_DIR)/DriverApp/Baidu/iosSDK",
+				);
+				GCC_PREFIX_HEADER = DriverApp/DriverApp.pch;
+				INFOPLIST_FILE = DriverApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzy.DriverApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6eeedaff-0a84-495c-9386-d88ea46dba44";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+		48DF69DF1BD8A6010098FD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DriverAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzy.DriverAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriverApp.app/DriverApp";
+			};
+			name = Debug;
+		};
+		48DF69E01BD8A6010098FD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DriverAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzy.DriverAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriverApp.app/DriverApp";
+			};
+			name = Release;
+		};
+		48DF69E21BD8A6010098FD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DriverAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzy.DriverAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DriverApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		48DF69E31BD8A6010098FD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DriverAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzy.DriverAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DriverApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48DF69A91BD8A6010098FD92 /* Build configuration list for PBXProject "DriverApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48DF69D91BD8A6010098FD92 /* Debug */,
+				48DF69DA1BD8A6010098FD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48DF69DB1BD8A6010098FD92 /* Build configuration list for PBXNativeTarget "DriverApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48DF69DC1BD8A6010098FD92 /* Debug */,
+				48DF69DD1BD8A6010098FD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48DF69DE1BD8A6010098FD92 /* Build configuration list for PBXNativeTarget "DriverAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48DF69DF1BD8A6010098FD92 /* Debug */,
+				48DF69E01BD8A6010098FD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48DF69E11BD8A6010098FD92 /* Build configuration list for PBXNativeTarget "DriverAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48DF69E21BD8A6010098FD92 /* Debug */,
+				48DF69E31BD8A6010098FD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48DF69A61BD8A6010098FD92 /* Project object */;
+}
